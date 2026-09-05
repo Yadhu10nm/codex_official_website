@@ -1,0 +1,37 @@
+{
+  "tag": "WHO WE ARE",
+  "title": "About Our Coding Club",
+  "subtitle": "A collective of visionary student builders, algorithm designers, and software craftspeople.",
+  "description": "CODEX was founded as an ecosystem where ambitious collegiate developers move beyond conventional classroom theory. We build production-grade web systems, train neural networks, engineer interactive graphics, and collaborate on real-world industry problems.",
+  "extendedDescription": "Operating under the Department of Information Technology, our club bridges the gap between academic computer science and modern tech industry practices. Through peer mentorship, open-source sprints, and competitive hackathons, we prepare students to lead and innovate on a global scale.",
+  "vision": "To establish an elite engineering culture where curiosity fuels breakthrough software innovation and every member achieves technical mastery.",
+  "mission": "Empowering students through hands-on architecture, rigorous code reviews, cross-disciplinary collaboration, and high-impact project execution.",
+  "pillars": [
+    {
+      "icon": "Cpu",
+      "title": "Engineering Rigor",
+      "description": "We prioritize clean architecture, performant algorithms, and production-ready deployments."
+    },
+    {
+      "icon": "Users",
+      "title": "Community & Mentorship",
+      "description": "Senior developers mentor juniors in modern stacks, system design, and interview readiness."
+    },
+    {
+      "icon": "Globe",
+      "title": "Open Source Culture",
+      "description": "Contributing upstream to global projects and publishing developer tools for the community."
+    },
+    {
+      "icon": "Sparkles",
+      "title": "Frontier Technologies",
+      "description": "Continuous exploration of LLMs, spatial computing, WebGPU, and distributed architectures."
+    }
+  ],
+  "stats": [
+    { "value": "12", "label": "Tech Domains" },
+    { "value": "15+", "label": "Hackathon Trophies" },
+    { "value": "100%", "label": "Student Driven" },
+    { "value": "4.9/5", "label": "Community Rating" }
+  ]
+}

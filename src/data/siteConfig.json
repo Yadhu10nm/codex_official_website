@@ -1,0 +1,30 @@
+{
+  "college": {
+    "name": "Institute of Engineering & Technology",
+    "shortName": "IET",
+    "department": "Department of Information Technology & Computer Science",
+    "logo": "/assets/images/college-logo.svg",
+    "website": "https://college.edu"
+  },
+  "itClub": {
+    "name": "Information Technology Association",
+    "shortName": "ITA",
+    "logo": "/assets/images/it-club-logo.svg",
+    "tagline": "Empowering Future Technologists"
+  },
+  "codingClub": {
+    "name": "CODEX",
+    "fullName": "CODEX Official Coding Club",
+    "tagline": "CODE. CREATE. INNOVATE.",
+    "subTagline": "The premier student-led developer community & technology innovation lab.",
+    "logo": "/assets/images/codex-logo.svg",
+    "established": "2022",
+    "motto": "Transforming passionate thinkers into world-class engineers."
+  },
+  "contact": {
+    "email": "codex.club@college.edu",
+    "labLocation": "Advanced Computing Lab, Block 4, Floor 3",
+    "campus": "Main University Campus, Tech Park Drive",
+    "meetingSchedule": "Wednesdays & Fridays • 4:30 PM - 6:30 PM"
+  }
+}

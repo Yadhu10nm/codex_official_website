@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#090E18"/>
+  <g transform="translate(400, 225)">
+    <!-- Neural Network Node Lattice -->
+    <circle cx="-120" cy="-60" r="16" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+    <circle cx="-120" cy="60" r="16" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+    <circle cx="0" cy="-90" r="18" fill="#1E293B" stroke="#818CF8" stroke-width="2"/>
+    <circle cx="0" cy="0" r="22" fill="#1E293B" stroke="#38BDF8" stroke-width="2.5"/>
+    <circle cx="0" cy="90" r="18" fill="#1E293B" stroke="#818CF8" stroke-width="2"/>
+    <circle cx="120" cy="-50" r="16" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+    <circle cx="120" cy="50" r="16" fill="#1E293B" stroke="#38BDF8" stroke-width="2"/>
+
+    <!-- Interconnects -->
+    <line x1="-104" y1="-60" x2="-18" y2="-90" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5"/>
+    <line x1="-104" y1="-60" x2="-22" y2="0" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5"/>
+    <line x1="-104" y1="60" x2="-22" y2="0" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5"/>
+    <line x1="-104" y1="60" x2="-18" y2="90" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5"/>
+    <line x1="18" y1="-90" x2="104" y2="-50" stroke="rgba(129, 140, 248, 0.4)" stroke-width="1.5"/>
+    <line x1="22" y1="0" x2="104" y2="-50" stroke="rgba(129, 140, 248, 0.4)" stroke-width="1.5"/>
+    <line x1="22" y1="0" x2="104" y2="50" stroke="rgba(129, 140, 248, 0.4)" stroke-width="1.5"/>
+    <line x1="18" y1="90" x2="104" y2="50" stroke="rgba(129, 140, 248, 0.4)" stroke-width="1.5"/>
+
+    <text x="0" y="5" fill="#38BDF8" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">4-BIT</text>
+  </g>
+
+  <!-- Event Header Details -->
+  <g transform="translate(60, 60)">
+    <rect width="140" height="32" rx="6" fill="rgba(148, 163, 184, 0.15)" stroke="rgba(148, 163, 184, 0.4)" stroke-width="1"/>
+    <text x="70" y="21" fill="#CBD5E1" font-family="system-ui, sans-serif" font-weight="700" font-size="11" letter-spacing="1" text-anchor="middle">TECH TALK • AI</text>
+
+    <text x="0" y="75" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="800" font-size="30">Neural Architectures: LLMs</text>
+    <text x="0" y="105" fill="#94A3B8" font-family="system-ui, sans-serif" font-weight="500" font-size="15">Quantized Edge AI &amp; Local Model Deployment</text>
+  </g>
+
+  <rect x="60" y="370" width="280" height="34" rx="6" fill="#1E293B"/>
+  <text x="75" y="392" fill="#E2E8F0" font-family="monospace" font-size="11">● AUGUST 12, 2026 • HYBRID</text>
+</svg>

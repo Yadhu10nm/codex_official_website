@@ -1,0 +1,35 @@
+{
+  "badge": "COLLEGE OF TECHNOLOGY • CODING CLUB",
+  "heading": {
+    "primary": "CODE. CREATE.",
+    "highlight": "INNOVATE."
+  },
+  "description": "The premier student-led developer organization pushing the boundaries of software engineering, artificial intelligence, interactive 3D systems, and open-source computing.",
+  "buttons": [
+    {
+      "label": "Explore Projects",
+      "path": "/projects",
+      "variant": "primary",
+      "icon": "Code2"
+    },
+    {
+      "label": "Explore Events",
+      "path": "/events",
+      "variant": "secondary",
+      "icon": "Calendar"
+    }
+  ],
+  "stats": [
+    { "value": "500+", "label": "Active Builders" },
+    { "value": "45+", "label": "Shipped Projects" },
+    { "value": "28+", "label": "Hackathons & Events" },
+    { "value": "99.4%", "label": "Placement Success" }
+  ],
+  "ticker": [
+    "Next Gen Fullstack",
+    "Applied Machine Learning",
+    "Three.js & WebGL Systems",
+    "Distributed Cloud Architecture",
+    "Open Source Contributions"
+  ]
+}

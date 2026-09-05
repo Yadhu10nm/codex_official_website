@@ -1,0 +1,34 @@
+{
+  "socials": [
+    {
+      "name": "GitHub",
+      "icon": "Github",
+      "url": "https://github.com/codex-official-club",
+      "handle": "@codex-official-club"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "Linkedin",
+      "url": "https://linkedin.com/company/codex-coding-club",
+      "handle": "codex-coding-club"
+    },
+    {
+      "name": "Instagram",
+      "icon": "Instagram",
+      "url": "https://instagram.com/codex_club",
+      "handle": "@codex_club"
+    },
+    {
+      "name": "Discord",
+      "icon": "MessageSquare",
+      "url": "https://discord.gg/codex-community",
+      "handle": "CODEX Dev Hub"
+    },
+    {
+      "name": "YouTube",
+      "icon": "Youtube",
+      "url": "https://youtube.com/@codex_club",
+      "handle": "Codex Tech Talks"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#080C14"/>
+  <defs>
+    <linearGradient id="hyp-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 3D Spatial Wireframe Isometric Campus Grid -->
+  <g transform="translate(400, 220)">
+    <!-- Isometric Base Planes -->
+    <path d="M0 -120 L240 0 L0 120 L-240 0 Z" fill="rgba(30, 41, 59, 0.5)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5"/>
+    <path d="M0 -80 L160 0 L0 80 L-160 0 Z" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(148, 163, 184, 0.2)" stroke-width="1"/>
+
+    <!-- 3D Building 1 -->
+    <g transform="translate(-80, -20)">
+      <path d="M0 -60 L60 -30 L60 20 L0 -10 Z" fill="#1E293B" stroke="#60A5FA" stroke-width="1.2"/>
+      <path d="M-60 -30 L0 -60 L0 -10 L-60 20 Z" fill="#0F172A" stroke="#60A5FA" stroke-width="1.2"/>
+      <path d="M0 -60 L60 -30 L0 0 L-60 -30 Z" fill="#334155" stroke="#93C5FD" stroke-width="1.2"/>
+      <line x1="0" y1="-50" x2="0" y2="-90" stroke="#38BDF8" stroke-width="2"/>
+      <circle cx="0" cy="-90" r="4" fill="#38BDF8"/>
+    </g>
+
+    <!-- 3D Building 2 (Tower) -->
+    <g transform="translate(60, -40)">
+      <path d="M0 -100 L50 -75 L50 -5 L0 -30 Z" fill="#1E293B" stroke="#38BDF8" stroke-width="1.2"/>
+      <path d="M-50 -75 L0 -100 L0 -30 L-50 -5 Z" fill="#0F172A" stroke="#38BDF8" stroke-width="1.2"/>
+      <path d="M0 -100 L50 -75 L0 -50 L-50 -75 Z" fill="#475569" stroke="#BAE6FD" stroke-width="1.2"/>
+    </g>
+
+    <!-- 3D Geometric Nodes & Coordinates -->
+    <circle cx="120" cy="50" r="5" fill="#38BDF8"/>
+    <circle cx="-140" cy="40" r="5" fill="#818CF8"/>
+    <circle cx="0" cy="80" r="5" fill="#38BDF8"/>
+    <line x1="-140" y1="40" x2="0" y2="80" stroke="rgba(129, 140, 248, 0.4)" stroke-dasharray="3 3"/>
+    <line x1="0" y1="80" x2="120" y2="50" stroke="rgba(56, 189, 248, 0.4)" stroke-dasharray="3 3"/>
+  </g>
+
+  <rect x="50" y="40" width="220" height="34" rx="8" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1"/>
+  <text x="160" y="62" fill="#38BDF8" font-family="monospace" font-size="12" text-anchor="middle">WEBGL 3D • SPATIAL TWIN</text>
+</svg>

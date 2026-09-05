@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <rect width="200" height="60" rx="8" fill="rgba(15, 23, 42, 0.4)"/>
+  <!-- College Shield -->
+  <path d="M24 14L38 20V34C38 42 24 48 24 48C24 48 10 42 10 34V20L24 14Z" fill="#1E293B" stroke="#64748B" stroke-width="2"/>
+  <path d="M24 20V42" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <path d="M15 28H33" stroke="#94A3B8" stroke-width="1.5"/>
+  <circle cx="24" cy="28" r="3" fill="#38BDF8"/>
+  <!-- Text -->
+  <text x="48" y="27" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="13" letter-spacing="0.5">IET COLLEGE</text>
+  <text x="48" y="42" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-weight="500" font-size="9" letter-spacing="0.8">ENGINEERING &amp; TECH</text>
+</svg>

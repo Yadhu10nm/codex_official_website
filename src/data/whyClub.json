@@ -1,0 +1,55 @@
+{
+  "tag": "MEMBERSHIP VALUE",
+  "title": "Why Join This Club?",
+  "subtitle": "Discover how being part of CODEX accelerates your journey from student to high-caliber software engineer.",
+  "cards": [
+    {
+      "id": "learn",
+      "title": "Learn",
+      "tagline": "Practical Mastery",
+      "description": "Learn modern technologies through practical experience, deep-dive workshops, and industry standard code review practices.",
+      "icon": "GraduationCap",
+      "highlights": ["Zero to Hero Bootcamps", "System Design Workshops", "Algorithm Masterclasses"]
+    },
+    {
+      "id": "build",
+      "title": "Build",
+      "tagline": "Real-World Systems",
+      "description": "Build real-world projects that solve genuine campus and community problems, moving far beyond theoretical assignments.",
+      "icon": "Code2",
+      "highlights": ["Fullstack Web Platforms", "Microservice Architectures", "Interactive 3D Applications"]
+    },
+    {
+      "id": "collaborate",
+      "title": "Collaborate",
+      "tagline": "Team Synergy",
+      "description": "Work with passionate peers, designers, and senior engineers in agile multi-disciplinary squads.",
+      "icon": "Users2",
+      "highlights": ["Agile Sprint Sprints", "Pair Programming Sessions", "Cross-Domain Teams"]
+    },
+    {
+      "id": "compete",
+      "title": "Compete",
+      "tagline": "Hackathons & Contests",
+      "description": "Participate in national coding competitions, 24-hour hackathons, and algorithmic programming contests.",
+      "icon": "Trophy",
+      "highlights": ["Smart India Hackathon", "ICPC Algorithmic Prep", "Internal Sprint Battles"]
+    },
+    {
+      "id": "explore",
+      "title": "Explore",
+      "tagline": "Frontier Innovation",
+      "description": "Explore AI, Web, 3D, Cloud and emerging technologies before they hit mainstream textbooks.",
+      "icon": "Compass",
+      "highlights": ["Generative AI & LLMs", "Three.js / WebGL / WebGPU", "Cloud Native DevOps"]
+    },
+    {
+      "id": "grow",
+      "title": "Grow",
+      "tagline": "Career Elevation",
+      "description": "Develop technical and professional skills with resume building, mock interviews, and strong alumni network support.",
+      "icon": "TrendingUp",
+      "highlights": ["FAANG Mock Interviews", "Portfolio Guidance", "Direct Referral Network"]
+    }
+  ]
+}

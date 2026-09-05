@@ -1,0 +1,216 @@
+[
+  {
+    "id": 1,
+    "title": "Aetheris: Neural Code Synthesis Engine",
+    "tagline": "AI-powered AST-aware code transformer & real-time documentation generator",
+    "description": "An intelligent developer copilot engine that analyzes Abstract Syntax Trees (AST) in real-time, generates contextual documentation, and refactors legacy codebases into modern TypeScript paradigms.",
+    "category": "AI",
+    "image": "/assets/projects/project-aetheris.svg",
+    "video": "",
+    "featured": true,
+    "date": "Spring 2026",
+    "technologies": ["React", "Python", "AI", "FastAPI", "PyTorch", "TailwindCSS"],
+    "detailedOverview": "Aetheris was engineered during a 48-hour club innovation sprint to reduce developer cognitive load. It features an in-browser code editor paired with a local quantized model backend, achieving sub-100ms inference times on modern consumer hardware.",
+    "architecture": "Client frontend built with React and Vite; communication over WebSockets; Python FastAPI backend with PyTorch ONNX runtime; AST parsing with Tree-sitter.",
+    "keyFeatures": [
+      "Real-time Abstract Syntax Tree semantic parsing",
+      "Context-aware automated documentation generation",
+      "Zero-latency WebAssembly token stream preview",
+      "Privacy-first local model execution fallback"
+    ],
+    "creators": [
+      {
+        "name": "Aarav Sharma",
+        "role": "ML Lead & Backend Architect",
+        "instagram": "https://instagram.com/aarav.dev",
+        "linkedin": "https://linkedin.com/in/aarav-sharma-tech",
+        "github": "https://github.com/aaravsharma"
+      },
+      {
+        "name": "Diya Nair",
+        "role": "Frontend & UI/UX Engineer",
+        "instagram": "https://instagram.com/diya.codes",
+        "linkedin": "https://linkedin.com/in/diya-nair-dev",
+        "github": "https://github.com/diyanair"
+      }
+    ],
+    "demoLink": "https://aetheris-demo.codex.edu",
+    "githubLink": "https://github.com/codex-official-club/aetheris-engine"
+  },
+  {
+    "id": 2,
+    "title": "Hyperion 3D: Spatial Campus Meta-Twin",
+    "tagline": "Photorealistic interactive digital twin of the university campus",
+    "description": "An interactive WebGL-powered 3D spatial metaverse representation of the college campus, featuring real-time room occupancies, event heatmaps, and immersive navigation paths.",
+    "category": "3D",
+    "image": "/assets/projects/project-hyperion.svg",
+    "video": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    "featured": true,
+    "date": "Winter 2025",
+    "technologies": ["Three.js", "React", "3D", "WebGL", "Node.js", "GLSL Shaders"],
+    "detailedOverview": "Hyperion represents a leap into spatial web engineering. Using procedural meshes and optimized low-poly LOD techniques, the entire 50-acre university grounds are navigable in real-time on standard mobile browsers.",
+    "architecture": "React Three Fiber with custom Three.js shader materials, glTF Draco compression, and real-time MQTT telemetry synchronization.",
+    "keyFeatures": [
+      "Optimized 60 FPS rendering on budget laptops and mobile devices",
+      "Interactive 3D building interior walkthroughs",
+      "Live sensor IoT overlay showing lab workstation availability",
+      "Dynamic weather & time-of-day solar lighting simulation"
+    ],
+    "creators": [
+      {
+        "name": "Rohan Menon",
+        "role": "3D Graphics & Shaders Lead",
+        "instagram": "https://instagram.com/rohan_3d",
+        "linkedin": "https://linkedin.com/in/rohan-menon-3d",
+        "github": "https://github.com/rohanmenon"
+      },
+      {
+        "name": "Neha Patel",
+        "role": "Systems Integration & WebGL",
+        "instagram": "",
+        "linkedin": "https://linkedin.com/in/neha-patel-systems",
+        "github": "https://github.com/nehapatel"
+      }
+    ],
+    "demoLink": "https://hyperion.codex.edu",
+    "githubLink": "https://github.com/codex-official-club/hyperion-spatial"
+  },
+  {
+    "id": 3,
+    "title": "QuantumPulse: Distributed High-Throughput Message Queue",
+    "tagline": "Lightweight, ultra-low-latency distributed event broker",
+    "description": "A high-performance distributed event streaming platform built in Go and Python, designed to handle up to 250,000 requests per second with Raft consensus and disk-backed append-only logs.",
+    "category": "Cloud",
+    "image": "/assets/projects/project-quantumpulse.svg",
+    "video": "",
+    "featured": true,
+    "date": "Fall 2025",
+    "technologies": ["Python", "Go", "Distributed Systems", "gRPC", "Docker", "Raft"],
+    "detailedOverview": "Built by the Systems Engineering squad to power all internal club services and high-traffic event ticketing, QuantumPulse demonstrates robust fault tolerance and zero data loss across network partitions.",
+    "architecture": "Custom Raft leader election algorithm in Go; zero-copy kernel disk writing; Python SDK with asynchronous async/await client drivers.",
+    "keyFeatures": [
+      "Sub-millisecond P99 latency across distributed nodes",
+      "Automatic leader failover with Raft consensus protocol",
+      "Prometheus & Grafana telemetry dashboards built-in",
+      "Memory footprint under 32MB per node at baseline"
+    ],
+    "creators": [
+      {
+        "name": "Vikram Sethi",
+        "role": "Distributed Systems Engineer",
+        "instagram": "https://instagram.com/vikram_sethi",
+        "linkedin": "https://linkedin.com/in/vikram-sethi-dev",
+        "github": "https://github.com/vikramsethi"
+      }
+    ],
+    "demoLink": "",
+    "githubLink": "https://github.com/codex-official-club/quantumpulse-broker"
+  },
+  {
+    "id": 4,
+    "title": "SynapseML: Edge Vision for Automated Attendance",
+    "tagline": "Real-time edge facial recognition with anti-spoofing detection",
+    "description": "An edge AI biometric platform engineered for university lecture halls that identifies multiple student faces concurrently while preventing 2D photo spoofing using depth estimation.",
+    "category": "ML",
+    "image": "/assets/projects/project-synapseml.svg",
+    "video": "",
+    "featured": false,
+    "date": "Autumn 2025",
+    "technologies": ["Python", "ML", "OpenCV", "TensorFlow", "FastAPI", "React"],
+    "detailedOverview": "SynapseML eliminates traditional paper sign-in queues by streaming 1080p camera feeds through a lightweight MobileNet backbone on Raspberry Pi 5 hardware, verifying 60+ students in under 5 seconds.",
+    "architecture": "Python OpenCV video processing pipeline; TensorRT inference acceleration; SQLite encrypted local cache synced with cloud database via REST API.",
+    "keyFeatures": [
+      "Multi-face bounding box tracking at 30 FPS",
+      "Liveness detection with blink and texture analysis",
+      "Automated attendance report generation with export to CSV/PDF",
+      "GDPR-compliant anonymized cryptographic face embedding storage"
+    ],
+    "creators": [
+      {
+        "name": "Kavya Subramaniam",
+        "role": "Computer Vision Researcher",
+        "instagram": "https://instagram.com/kavya_vision",
+        "linkedin": "https://linkedin.com/in/kavya-subramaniam",
+        "github": "https://github.com/kavyasubramaniam"
+      },
+      {
+        "name": "Siddharth Rao",
+        "role": "Edge Hardware & Deployment Lead",
+        "instagram": "https://instagram.com/sid_embedded",
+        "linkedin": "https://linkedin.com/in/siddharth-rao-dev",
+        "github": "https://github.com/siddharthrao"
+      }
+    ],
+    "demoLink": "https://synapseml-portal.codex.edu",
+    "githubLink": "https://github.com/codex-official-club/synapse-ml-edge"
+  },
+  {
+    "id": 5,
+    "title": "DevSphere: Collaborative Web IDE & Sandbox",
+    "tagline": "In-browser collaborative code editor with instant containerized execution",
+    "description": "A browser-based cloud IDE featuring Google Docs-style real-time multiplayer editing, syntax tree analysis, integrated terminal, and sandboxed Docker code runners for 15+ languages.",
+    "category": "Web",
+    "image": "/assets/projects/project-devsphere.svg",
+    "video": "",
+    "featured": true,
+    "date": "Summer 2025",
+    "technologies": ["React", "TypeScript", "WebSockets", "Docker", "Node.js", "Web"],
+    "detailedOverview": "DevSphere was crafted to power Codex onboarding workshops. Students open a URL and immediately start coding in C++, Python, or Rust without needing local environment configuration or compiler setups.",
+    "architecture": "Monaco Editor embedded inside React; CRDTs via Yjs for conflict-free real-time collaboration; isolated ephemeral Linux containers managed by Nomad.",
+    "keyFeatures": [
+      "Operational Transform / CRDT conflict-free multiplayer typing",
+      "Integrated Xterm.js interactive cloud terminal",
+      "Instant shareable session links with permissions control",
+      "Resource-constrained sandbox preventing CPU/Memory starvation"
+    ],
+    "creators": [
+      {
+        "name": "Ananya Joshi",
+        "role": "Fullstack Cloud Architect",
+        "instagram": "https://instagram.com/ananya_codes",
+        "linkedin": "https://linkedin.com/in/ananya-joshi-tech",
+        "github": "https://github.com/ananyajoshi"
+      },
+      {
+        "name": "Taranpreet Singh",
+        "role": "Security & Container Engineer",
+        "instagram": "",
+        "linkedin": "https://linkedin.com/in/taranpreet-singh-dev",
+        "github": "https://github.com/taranpreetsingh"
+      }
+    ],
+    "demoLink": "https://devsphere.codex.edu",
+    "githubLink": "https://github.com/codex-official-club/devsphere-ide"
+  },
+  {
+    "id": 6,
+    "title": "BioTrack: Telemetry Wearable Health Analytics",
+    "tagline": "Cross-platform mobile dashboard for real-time sports biometric signals",
+    "description": "A high-fidelity mobile application interfacing with BLE heart rate and accelerometer sensors to compute real-time stress indices and predictive recovery metrics.",
+    "category": "Mobile",
+    "image": "/assets/projects/project-biotrack.svg",
+    "video": "",
+    "featured": false,
+    "date": "Spring 2025",
+    "technologies": ["React", "Mobile", "Bluetooth LE", "Python", "Chart.js"],
+    "detailedOverview": "Developed in collaboration with the sports department to track athlete conditioning, BioTrack captures raw ECG/PPG wave signals and performs on-device spectral analysis.",
+    "architecture": "React Native frontend connected to custom ESP32 Bluetooth peripheral; Python scientific analysis pipeline; local SQLite sync.",
+    "keyFeatures": [
+      "Real-time ECG waveform rendering at 120Hz",
+      "Heart Rate Variability (HRV) autonomic balance analysis",
+      "Encrypted export compatible with medical health records",
+      "Offline-first sync queue for remote training camps"
+    ],
+    "creators": [
+      {
+        "name": "Meera Krishnan",
+        "role": "Mobile & IoT Lead",
+        "instagram": "https://instagram.com/meera_krish",
+        "linkedin": "https://linkedin.com/in/meera-krishnan-tech",
+        "github": "https://github.com/meerakrishnan"
+      }
+    ],
+    "demoLink": "https://biotrack.codex.edu",
+    "githubLink": "https://github.com/codex-official-club/biotrack-wearable"
+  }
+]

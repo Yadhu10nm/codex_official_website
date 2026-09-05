@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="24" fill="#0F172A" stroke="#A78BFA33" stroke-width="2"/>
+  <circle cx="60" cy="52" r="32" fill="#1E293B" stroke="#A78BFA66" stroke-width="2"/>
+  <text x="60" y="60" fill="#A78BFA" font-family="system-ui, sans-serif" font-size="20" font-weight="800" text-anchor="middle">AJ</text>
+  <rect x="20" y="94" width="80" height="18" rx="4" fill="#1E293B" stroke="#A78BFA44" stroke-width="1"/>
+  <text x="60" y="106" fill="#94A3B8" font-family="monospace" font-size="8" font-weight="700" text-anchor="middle">EVENTS</text>
+</svg>

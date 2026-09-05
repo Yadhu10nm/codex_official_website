@@ -1,0 +1,81 @@
+{
+  "title": "Our Core Leadership & Engineering Leads",
+  "subtitle": "The student architects, organizers, and engineers driving CODEX forward.",
+  "faculty": [
+    {
+      "name": "Dr. Rajeshwar Sharma",
+      "role": "Faculty Advisor & Head of IT Department",
+      "avatar": "/assets/avatars/faculty-1.svg",
+      "bio": "Championing student innovation, applied research, and industry collaboration for over 18 years.",
+      "linkedin": "https://linkedin.com/in/dr-rajeshwar-sharma"
+    }
+  ],
+  "leads": [
+    {
+      "id": "pres",
+      "name": "Aditya Vardhan",
+      "role": "President & Club Lead",
+      "domain": "Systems & Strategy",
+      "avatar": "/assets/avatars/team-aditya.svg",
+      "bio": "Full-stack systems engineer passionate about distributed computing, developer toolchains, and community growth.",
+      "github": "https://github.com/adityavardhan",
+      "linkedin": "https://linkedin.com/in/aditya-vardhan-dev",
+      "instagram": "https://instagram.com/aditya.dev"
+    },
+    {
+      "id": "tech-lead",
+      "name": "Diya Nair",
+      "role": "Vice President & Technical Lead",
+      "domain": "Frontend & UI/UX",
+      "avatar": "/assets/avatars/team-diya.svg",
+      "bio": "Crafting liquid glassmorphic interfaces, accessible design systems, and performant React applications.",
+      "github": "https://github.com/diyanair",
+      "linkedin": "https://linkedin.com/in/diya-nair-dev",
+      "instagram": "https://instagram.com/diya.codes"
+    },
+    {
+      "id": "ml-lead",
+      "name": "Aarav Sharma",
+      "role": "Head of Machine Learning & AI",
+      "domain": "Machine Learning",
+      "avatar": "/assets/avatars/team-aarav.svg",
+      "bio": "Researching AST transformers, local LLM quantization, and computer vision neural pipelines.",
+      "github": "https://github.com/aaravsharma",
+      "linkedin": "https://linkedin.com/in/aarav-sharma-tech",
+      "instagram": "https://instagram.com/aarav.dev"
+    },
+    {
+      "id": "graphics-lead",
+      "name": "Rohan Menon",
+      "role": "Lead 3D Graphics & Metaverse Engineer",
+      "domain": "Three.js & WebGL",
+      "avatar": "/assets/avatars/team-rohan.svg",
+      "bio": "Building immersive WebGL experiences, custom GLSL shaders, and interactive spatial interfaces.",
+      "github": "https://github.com/rohanmenon",
+      "linkedin": "https://linkedin.com/in/rohan-menon-3d",
+      "instagram": "https://instagram.com/rohan_3d"
+    },
+    {
+      "id": "cloud-lead",
+      "name": "Vikram Sethi",
+      "role": "DevOps & Cloud Infrastructure Lead",
+      "domain": "Cloud & Distributed Systems",
+      "avatar": "/assets/avatars/team-vikram.svg",
+      "bio": "Automating containerized CI/CD pipelines, Kubernetes clusters, and Raft-based distributed brokers.",
+      "github": "https://github.com/vikramsethi",
+      "linkedin": "https://linkedin.com/in/vikram-sethi-dev",
+      "instagram": ""
+    },
+    {
+      "id": "events-lead",
+      "name": "Ananya Joshi",
+      "role": "Head of Events & Hackathons",
+      "domain": "Operations & Community",
+      "avatar": "/assets/avatars/team-ananya.svg",
+      "bio": "Orchestrating 600+ attendee hackathons, speaker workshops, and campus-wide coding challenges.",
+      "github": "https://github.com/ananyajoshi",
+      "linkedin": "https://linkedin.com/in/ananya-joshi-tech",
+      "instagram": "https://instagram.com/ananya_codes"
+    }
+  ]
+}

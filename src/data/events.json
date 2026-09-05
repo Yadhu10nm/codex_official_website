@@ -1,0 +1,179 @@
+[
+  {
+    "id": 1,
+    "title": "HackCodex 2026: 36-Hour National Hackathon",
+    "status": "upcoming",
+    "category": "Hackathon",
+    "date": "October 24-25, 2026",
+    "time": "09:00 AM - 09:00 PM (36 Hrs)",
+    "location": "Auditorium & Innovation Hub, Main Campus",
+    "mode": "In-Person & Hybrid",
+    "image": "/assets/events/event-hackathon.svg",
+    "video": "",
+    "description": "Our flagship annual national hackathon bringing together over 600+ collegiate builders to build high-impact solutions across AI, Web3, ClimateTech, and Spatial Computing.",
+    "fullDescription": "HackCodex 2026 is the culmination of university tech innovation. Over 36 non-stop hours, teams from top engineering institutions across the country compete for $15,000+ in cash prizes, API credits, and direct venture incubator interviews. Includes 6 expert mentorship roundtables, midnight pizza sprints, and live keynote firesides.",
+    "tracks": [
+      "AI & Intelligent Systems",
+      "Next-Gen Spatial Computing & 3D Web",
+      "Open Source Infrastructure",
+      "FinTech & Decentralized Protocols"
+    ],
+    "highlights": [
+      "600+ Hacker Participants",
+      "$15,000+ Total Prize Pool",
+      "25+ Industry Mentors from Tier 1 Tech Firms",
+      "Fast-track internship interviews with sponsor partners"
+    ],
+    "speakers": [
+      {
+        "name": "Dr. Sarah Lin",
+        "title": "Principal AI Researcher @ DeepMind Labs",
+        "avatar": "/assets/avatars/speaker-1.svg"
+      },
+      {
+        "name": "Marcus Vance",
+        "title": "VP of Engineering @ CloudScale Systems",
+        "avatar": "/assets/avatars/speaker-2.svg"
+      }
+    ],
+    "registrationLink": "https://hackcodex2026.devpost.com",
+    "registrationOpen": true
+  },
+  {
+    "id": 2,
+    "title": "WebGL & Three.js Shader Masterclass",
+    "status": "upcoming",
+    "category": "Workshop",
+    "date": "September 18, 2026",
+    "time": "04:30 PM - 07:30 PM",
+    "location": "Advanced Computing Lab 4B",
+    "mode": "Hands-on Lab & Live Stream",
+    "image": "/assets/events/event-webgl.svg",
+    "video": "",
+    "description": "An intensive hands-on workshop taking students from foundational 3D coordinate mathematics to writing custom GLSL vertex and fragment shaders in React Three Fiber.",
+    "fullDescription": "Step into the world of creative coding and GPU acceleration. Participants will build their own interactive 3D particle constellation, learn post-processing bloom pipelines, and optimize frame rendering for consumer mobile devices. All assets and code starter templates provided.",
+    "tracks": [
+      "Coordinate Spaces & Matrix Transformations",
+      "GLSL Vertex & Fragment Shaders",
+      "Lighting Models & Physically Based Rendering",
+      "Performance Profiling with Chrome DevTools"
+    ],
+    "highlights": [
+      "100% Practical Live Coding",
+      "Custom Shader Starter Kit to keep",
+      "Certificate of Workshop Mastery",
+      "Interactive 3D project for your portfolio"
+    ],
+    "speakers": [
+      {
+        "name": "Rohan Menon",
+        "title": "Lead 3D Graphics Engineer @ Codex",
+        "avatar": "/assets/avatars/speaker-3.svg"
+      }
+    ],
+    "registrationLink": "https://forms.gle/codex-threejs-masterclass",
+    "registrationOpen": true
+  },
+  {
+    "id": 3,
+    "title": "Neural Architectures: LLMs & Quantized Edge AI",
+    "status": "past",
+    "category": "Tech Talk",
+    "date": "August 12, 2026",
+    "time": "05:00 PM - 07:00 PM",
+    "location": "Seminar Hall 2 & YouTube Live",
+    "mode": "Hybrid",
+    "image": "/assets/events/event-neural.svg",
+    "video": "",
+    "description": "An architectural deep-dive into Transformer attention mechanisms, local 4-bit quantization with llama.cpp, and deploying private models on modest GPU hardware.",
+    "fullDescription": "Attended by over 320 students and faculty members, this session broke down how modern Large Language Models work beneath the hype. The speaker demonstrated running 7B parameter instruction-tuned models on a standard Apple M2 laptop with real-time streaming output.",
+    "tracks": [
+      "Self-Attention & Multi-Head Query Math",
+      "AWQ and GGUF Quantization Techniques",
+      "Retrieval-Augmented Generation (RAG) Architecture",
+      "Local Vector Databases with ChromaDB"
+    ],
+    "highlights": [
+      "320+ Live Attendees",
+      "Live 4-bit Quantization Benchmark",
+      "Open-source repository with 150+ GitHub Stars",
+      "Q&A session covering AI engineering career paths"
+    ],
+    "speakers": [
+      {
+        "name": "Dr. Vivek Chawla",
+        "title": "Distinguished ML Engineer @ TensorCore",
+        "avatar": "/assets/avatars/speaker-4.svg"
+      }
+    ],
+    "registrationLink": "",
+    "registrationOpen": false
+  },
+  {
+    "id": 4,
+    "title": "Codex DevFest 2026: Spring Code Sprint",
+    "status": "past",
+    "category": "Hackathon",
+    "date": "March 29, 2026",
+    "time": "08:00 AM - 08:00 PM",
+    "location": "Main IT Center & Campus Quad",
+    "mode": "In-Person",
+    "image": "/assets/events/event-devfest.svg",
+    "video": "",
+    "description": "A rapid 12-hour high-intensity prototype sprint where 45 student teams built campus utility tools, developer utilities, and interactive web games.",
+    "fullDescription": "DevFest Spring tested speed, resilience, and product intuition. Teams were given surprise API constraints and had 12 hours to ship a functioning deployment. Top projects included an automated bus tracker and a peer note-sharing markdown platform.",
+    "tracks": [
+      "Campus Utility Apps",
+      "Developer Productivity Tools",
+      "Lightweight Web Games"
+    ],
+    "highlights": [
+      "45 Shipping Teams",
+      "12 Production Deployments",
+      "Judged by Alumni Senior Engineers",
+      "Full recording available on YouTube"
+    ],
+    "speakers": [
+      {
+        "name": "Pooja Hegde",
+        "title": "Software Architect @ Stripe & Club Alum",
+        "avatar": "/assets/avatars/speaker-5.svg"
+      }
+    ],
+    "registrationLink": "",
+    "registrationOpen": false
+  },
+  {
+    "id": 5,
+    "title": "System Design: Scaling to 10M Concurrent Users",
+    "status": "past",
+    "category": "Workshop",
+    "date": "February 15, 2026",
+    "time": "04:30 PM - 06:30 PM",
+    "location": "Smart Classroom 101",
+    "mode": "In-Person",
+    "image": "/assets/events/event-systemdesign.svg",
+    "video": "",
+    "description": "Interactive whiteboard session dissecting horizontal scaling, distributed caching with Redis, database sharding, and fault-tolerant message brokers.",
+    "fullDescription": "An invaluable session for students preparing for Tier-1 engineering interviews. We mapped out the complete architecture of a global URL shortener, a live streaming chat service, and an e-commerce flash sale queue with zero double-booking.",
+    "tracks": [
+      "Load Balancing & Consistent Hashing",
+      "Cache Invalidation Strategies (Cache-Aside vs Write-Through)",
+      "Database Partitioning & CAP Theorem Tradeoffs"
+    ],
+    "highlights": [
+      "180+ Student Attendees",
+      "Hands-on Whiteboard Architectural Challenges",
+      "Comprehensive System Design PDF Handbook Distributed"
+    ],
+    "speakers": [
+      {
+        "name": "Karan Malhotra",
+        "title": "Senior Staff Architect @ Meta",
+        "avatar": "/assets/avatars/speaker-6.svg"
+      }
+    ],
+    "registrationLink": "",
+    "registrationOpen": false
+  }
+]

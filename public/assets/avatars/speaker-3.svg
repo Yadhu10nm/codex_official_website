@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="24" fill="#0F172A" stroke="#34D39933" stroke-width="2"/>
+  <circle cx="60" cy="52" r="32" fill="#1E293B" stroke="#34D39966" stroke-width="2"/>
+  <text x="60" y="60" fill="#34D399" font-family="system-ui, sans-serif" font-size="20" font-weight="800" text-anchor="middle">RM</text>
+  <rect x="20" y="94" width="80" height="18" rx="4" fill="#1E293B" stroke="#34D39944" stroke-width="1"/>
+  <text x="60" y="106" fill="#94A3B8" font-family="monospace" font-size="8" font-weight="700" text-anchor="middle">3D GLSL</text>
+</svg>

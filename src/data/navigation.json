@@ -1,0 +1,18 @@
+{
+  "brand": {
+    "name": "CODEX",
+    "badge": "CLUB"
+  },
+  "links": [
+    { "name": "Home", "path": "/" },
+    { "name": "About", "path": "/#about" },
+    { "name": "Projects", "path": "/projects" },
+    { "name": "Events", "path": "/events" },
+    { "name": "Team", "path": "/team" },
+    { "name": "Contact", "path": "/contact" }
+  ],
+  "action": {
+    "label": "Join Codex",
+    "href": "/contact"
+  }
+}
