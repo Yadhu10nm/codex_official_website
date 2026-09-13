@@ -109,12 +109,12 @@ export default function Contact() {
                     alignItems: 'center',
                   }}
                 >
-                  <CheckCircle2 size={44} color="#10b981" style={{ marginBottom: '16px' }} />
-                  <h4 style={{ fontSize: '1.25rem', color: '#f8fafc', marginBottom: '8px' }}>
+                  <CheckCircle2 size={44} color="#059669" style={{ marginBottom: '16px' }} />
+                  <h4 style={{ fontSize: '1.25rem', color: 'var(--text-primary)', marginBottom: '8px' }}>
                     Application Transmitted!
                   </h4>
                   <p style={{ fontSize: '0.92rem', color: 'var(--text-secondary)', maxWidth: '380px', marginBottom: '24px' }}>
-                    Thank you, <strong style={{ color: '#fff' }}>{formData.name}</strong>. Our student council will review your submission and reach out via <strong style={{ color: '#38bdf8' }}>{formData.email}</strong>.
+                    Thank you, <strong style={{ color: 'var(--text-primary)' }}>{formData.name}</strong>. Our student council will review your submission and reach out via <strong style={{ color: 'var(--accent-blue)' }}>{formData.email}</strong>.
                   </p>
                   <button
                     type="button"
@@ -176,11 +176,11 @@ export default function Contact() {
                         className="glass-input"
                         style={{ cursor: 'pointer' }}
                       >
-                        <option value="Year 1" style={{ background: '#0f172a' }}>First Year (Freshman)</option>
-                        <option value="Year 2" style={{ background: '#0f172a' }}>Second Year (Sophomore)</option>
-                        <option value="Year 3" style={{ background: '#0f172a' }}>Third Year (Junior)</option>
-                        <option value="Year 4" style={{ background: '#0f172a' }}>Fourth Year (Senior)</option>
-                        <option value="Postgrad" style={{ background: '#0f172a' }}>Postgraduate / Faculty</option>
+                        <option value="Year 1" style={{ background: '#ffffff', color: '#0f172a' }}>First Year (Freshman)</option>
+                        <option value="Year 2" style={{ background: '#ffffff', color: '#0f172a' }}>Second Year (Sophomore)</option>
+                        <option value="Year 3" style={{ background: '#ffffff', color: '#0f172a' }}>Third Year (Junior)</option>
+                        <option value="Year 4" style={{ background: '#ffffff', color: '#0f172a' }}>Fourth Year (Senior)</option>
+                        <option value="Postgrad" style={{ background: '#ffffff', color: '#0f172a' }}>Postgraduate / Faculty</option>
                       </select>
                     </div>
 
@@ -194,11 +194,11 @@ export default function Contact() {
                         className="glass-input"
                         style={{ cursor: 'pointer' }}
                       >
-                        <option value="Fullstack Web" style={{ background: '#0f172a' }}>Fullstack Web (React/Node)</option>
-                        <option value="AI & ML" style={{ background: '#0f172a' }}>Machine Learning &amp; AI</option>
-                        <option value="3D & WebGL" style={{ background: '#0f172a' }}>3D Graphics / Three.js</option>
-                        <option value="Cloud & DevOps" style={{ background: '#0f172a' }}>Cloud &amp; Distributed Systems</option>
-                        <option value="Mobile Development" style={{ background: '#0f172a' }}>Mobile Development</option>
+                        <option value="Fullstack Web" style={{ background: '#ffffff', color: '#0f172a' }}>Fullstack Web (React/Node)</option>
+                        <option value="AI & ML" style={{ background: '#ffffff', color: '#0f172a' }}>Machine Learning &amp; AI</option>
+                        <option value="3D & WebGL" style={{ background: '#ffffff', color: '#0f172a' }}>3D Graphics / Three.js</option>
+                        <option value="Cloud & DevOps" style={{ background: '#ffffff', color: '#0f172a' }}>Cloud &amp; Distributed Systems</option>
+                        <option value="Mobile Development" style={{ background: '#ffffff', color: '#0f172a' }}>Mobile Development</option>
                       </select>
                     </div>
                   </div>
@@ -278,8 +278,8 @@ export default function Contact() {
                       key={idx}
                       style={{
                         borderRadius: 'var(--radius-md)',
-                        background: 'rgba(15, 23, 42, 0.4)',
-                        border: '1px solid var(--glass-border-subtle)',
+                        background: 'rgba(241, 245, 249, 0.7)',
+                        border: '1px solid rgba(15, 23, 42, 0.07)',
                         overflow: 'hidden',
                       }}
                     >

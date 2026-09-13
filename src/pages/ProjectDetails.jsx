@@ -299,8 +299,8 @@ export default function ProjectDetails() {
                         style={{
                           padding: '16px',
                           borderRadius: 'var(--radius-md)',
-                          background: 'rgba(15, 23, 42, 0.4)',
-                          border: '1px solid var(--glass-border-subtle)',
+                          background: 'rgba(241, 245, 249, 0.7)',
+                          border: '1px solid rgba(15, 23, 42, 0.07)',
                         }}
                       >
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>

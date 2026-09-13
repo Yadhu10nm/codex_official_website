@@ -25,37 +25,42 @@ export default function InteractiveCore({ mouseRef }) {
       groupRef.current.rotation.y = THREE.MathUtils.lerp(groupRef.current.rotation.y, targetRotY, delta * 2.5);
     }
 
-    // Inner Core Rotation
+    // Inner Core Rotation & Emissive Pulse
     if (innerCoreRef.current) {
-      innerCoreRef.current.rotation.x += delta * 0.3;
-      innerCoreRef.current.rotation.y += delta * 0.4;
+      innerCoreRef.current.rotation.x += delta * 0.28;
+      innerCoreRef.current.rotation.y += delta * 0.38;
+      if (innerCoreRef.current.material) {
+        innerCoreRef.current.material.emissiveIntensity = 0.22 + Math.sin(time * 2.0) * 0.12;
+      }
     }
 
     // Gimbal Rings Rotation
-    if (ring1Ref.current) ring1Ref.current.rotation.z += delta * 0.25;
-    if (ring2Ref.current) ring2Ref.current.rotation.x += delta * 0.2;
-    if (ring3Ref.current) ring3Ref.current.rotation.y += delta * 0.18;
+    if (ring1Ref.current) ring1Ref.current.rotation.z += delta * 0.22;
+    if (ring2Ref.current) ring2Ref.current.rotation.x += delta * 0.18;
+    if (ring3Ref.current) ring3Ref.current.rotation.y += delta * 0.16;
 
     // Orbiting Data Nodes
     if (nodesGroupRef.current) {
-      nodesGroupRef.current.rotation.y += delta * 0.35;
+      nodesGroupRef.current.rotation.y += delta * 0.32;
     }
   });
 
   return (
     <group ref={groupRef}>
+      {/* Central Core Light */}
+      <pointLight position={[0, 0, 0]} intensity={1.5} distance={5} color="#38bdf8" />
+
       {/* Central Tech Core - Octahedron */}
-      <mesh ref={innerCoreRef} scale={1.1}>
+      <mesh ref={innerCoreRef} scale={1.15}>
         <octahedronGeometry args={[1.3, 0]} />
         <meshPhysicalMaterial
-          color="#0f172a"
-          emissive="#0d1b2a"
-          emissiveIntensity={0.2}
-          roughness={0.2}
-          metalness={0.8}
-          wireframe={false}
-          clearcoat={0.6}
-          clearcoatRoughness={0.2}
+          color="#0b1329"
+          emissive="#0284c7"
+          emissiveIntensity={0.25}
+          roughness={0.15}
+          metalness={0.85}
+          clearcoat={0.9}
+          clearcoatRoughness={0.15}
         />
       </mesh>
 

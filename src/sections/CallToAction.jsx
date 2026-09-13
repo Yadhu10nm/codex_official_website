@@ -12,8 +12,9 @@ export default function CallToAction() {
           style={{
             padding: '64px 48px',
             textAlign: 'center',
-            background: 'radial-gradient(circle at 50% 0%, rgba(30, 41, 59, 0.6) 0%, rgba(9, 13, 22, 0.9) 100%)',
-            border: '1px solid var(--glass-border-highlight)',
+            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 249, 255, 0.9) 100%)',
+            border: '1px solid rgba(15, 23, 42, 0.08)',
+            boxShadow: '0 12px 40px -6px rgba(15, 23, 42, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.95)',
             position: 'relative',
           }}
         >
@@ -26,7 +27,7 @@ export default function CallToAction() {
               transform: 'translateX(-50%)',
               width: '400px',
               height: '200px',
-              background: 'radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, transparent 70%)',
+              background: 'radial-gradient(circle, rgba(2, 132, 199, 0.12) 0%, transparent 70%)',
               pointerEvents: 'none',
             }}
           />

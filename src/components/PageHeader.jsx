@@ -10,12 +10,13 @@ export default function PageHeader({
 }) {
   return (
     <div
+      className="page-header-container"
       style={{
-        paddingTop: '160px',
-        paddingBottom: '50px',
+        paddingTop: '130px',
+        paddingBottom: '46px',
         position: 'relative',
-        borderBottom: '1px solid var(--glass-border-subtle)',
-        background: 'linear-gradient(180deg, rgba(14, 20, 34, 0.4) 0%, rgba(5, 7, 11, 0) 100%)',
+        borderBottom: '1px solid rgba(15, 23, 42, 0.06)',
+        background: 'linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(241, 245, 249, 0.4) 100%)',
       }}
     >
       <div className="container">
@@ -97,6 +98,15 @@ export default function PageHeader({
           </p>
         )}
       </div>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .page-header-container {
+            padding-top: 104px !important;
+            padding-bottom: 36px !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }

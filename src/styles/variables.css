@@ -1,78 +1,84 @@
 :root {
-  /* Surface & Base Colors (Deep charcoal, dark navy, obsidian) */
-  --bg-primary: #05070b;
-  --bg-secondary: #090d16;
-  --bg-tertiary: #0e1422;
-  --bg-surface: #121a2d;
+  /* Pristine Water Base Colors (White / Off-White / Pale Cool Aqua) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --bg-surface: #ffffff;
+  --bg-surface-translucent: rgba(255, 255, 255, 0.92);
+  --bg-elevated: #ffffff;
 
-  /* Text & Contrast */
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
+  /* Typography & Contrast (Deep Charcoal & Refined Slate Greys) */
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
   --text-muted: #64748b;
-  --text-dim: #475569;
+  --text-dim: #94a3b8;
 
-  /* Sophisticated Muted Accents (Restrained, NO NEON) */
-  --accent-blue: #38bdf8;
-  --accent-blue-dim: rgba(56, 189, 248, 0.12);
-  --accent-blue-border: rgba(56, 189, 248, 0.28);
+  /* Subtle Aquatic Accents: Clean Blue, Soft Aqua, Pristine Sky */
+  --accent-cyan: #0891b2;
+  --accent-aqua: #06b6d4;
+  --accent-blue: #0284c7;
+  --accent-blue-hover: #0369a1;
+  --accent-blue-dim: rgba(2, 132, 199, 0.08);
+  --accent-blue-border: rgba(2, 132, 199, 0.2);
 
-  --accent-indigo: #818cf8;
-  --accent-indigo-dim: rgba(129, 140, 248, 0.12);
-
-  --accent-slate: #cbd5e1;
-  --accent-silver: #94a3b8;
+  --accent-indigo: #4f46e5;
+  --accent-indigo-dim: rgba(79, 70, 229, 0.06);
+  --accent-violet: #7c3aed;
+  --accent-emerald: #059669;
 
   /* Status Indicators */
   --status-success: #10b981;
-  --status-success-dim: rgba(16, 185, 129, 0.12);
   --status-warning: #f59e0b;
   --status-danger: #ef4444;
 
-  /* Liquid Glassmorphism Tokens */
-  --glass-bg-subtle: rgba(15, 23, 42, 0.45);
-  --glass-bg-card: rgba(15, 23, 42, 0.65);
-  --glass-bg-elevated: rgba(22, 32, 54, 0.75);
-  --glass-bg-dropdown: rgba(10, 15, 26, 0.92);
-  --glass-bg-input: rgba(15, 23, 42, 0.55);
+  /* Lightweight Objects Floating on Clear Water (Clean & Solid with Gentle Translucency) */
+  --glass-header: rgba(255, 255, 255, 0.88);
+  --glass-nav-pill: rgba(241, 245, 249, 0.85);
+  --glass-bg-subtle: rgba(248, 250, 252, 0.7);
+  --glass-bg-card: rgba(255, 255, 255, 0.94);
+  --glass-bg-card-hover: #ffffff;
+  --glass-bg-elevated: #ffffff;
+  --glass-bg-cta: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 249, 255, 0.95) 100%);
+  --glass-bg-dropdown: rgba(255, 255, 255, 0.98);
+  --glass-bg-input: #ffffff;
 
-  --glass-border-subtle: rgba(255, 255, 255, 0.06);
-  --glass-border-medium: rgba(255, 255, 255, 0.12);
-  --glass-border-highlight: rgba(255, 255, 255, 0.2);
-  --glass-border-focus: rgba(56, 189, 248, 0.4);
+  /* Delicate Water-Edge Borders */
+  --glass-border-subtle: rgba(15, 23, 42, 0.06);
+  --glass-border-medium: rgba(15, 23, 42, 0.09);
+  --glass-border-highlight: rgba(255, 255, 255, 0.95);
+  --glass-border-aqua: rgba(2, 132, 199, 0.25);
 
-  --glass-blur-sm: blur(8px);
+  /* Subtle Crisp Frosted Blur */
+  --glass-blur-sm: blur(10px);
   --glass-blur-md: blur(16px);
   --glass-blur-lg: blur(24px);
-  --glass-blur-xl: blur(36px);
+  --glass-blur-xl: blur(32px);
 
-  --glass-specular-top: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-  --glass-specular-glow: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.08) 0%, transparent 70%);
-
-  /* Shadows (Soft depth, non-glowing) */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 16px 40px -8px rgba(0, 0, 0, 0.55);
-  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37), inset 0 1px 1px 0 rgba(255, 255, 255, 0.08);
-  --shadow-glass-hover: 0 16px 48px 0 rgba(0, 0, 0, 0.5), inset 0 1px 2px 0 rgba(255, 255, 255, 0.15);
+  /* Gentle Buoyant Water Surface Shadows */
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
+  --shadow-md: 0 4px 16px -2px rgba(15, 23, 42, 0.05), 0 2px 4px -1px rgba(15, 23, 42, 0.03);
+  --shadow-lg: 0 12px 32px -4px rgba(15, 23, 42, 0.07), 0 4px 8px -2px rgba(15, 23, 42, 0.03);
+  --shadow-glass: 0 6px 24px -4px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  --shadow-glass-hover: 0 14px 36px -6px rgba(15, 23, 42, 0.09), 0 0 20px -2px rgba(2, 132, 199, 0.12), inset 0 1px 0 rgba(255, 255, 255, 1.0);
 
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
 
   /* Layout & Spacing */
-  --container-width: 1240px;
-  --container-wide: 1400px;
-  --header-height: 80px;
-  --topbar-height: 40px;
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 18px;
-  --radius-xl: 24px;
+  --container-width: 1220px;
+  --container-wide: 1380px;
+  --header-height: 72px;
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
   --radius-full: 9999px;
 
-  /* Transitions */
-  --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-smooth: 400ms cubic-bezier(0.16, 1, 0.3, 1);
-  --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  /* Motion & Transitions */
+  --transition-fast: 160ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-normal: 300ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-smooth: 450ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-bounce: 550ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }

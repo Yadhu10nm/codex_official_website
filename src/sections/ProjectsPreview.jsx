@@ -6,7 +6,7 @@ import ProjectCarousel from '../components/ProjectCarousel';
 
 export default function ProjectsPreview() {
   return (
-    <section className="section" style={{ position: 'relative', background: 'rgba(9, 13, 22, 0.4)' }}>
+    <section className="section" style={{ position: 'relative' }}>
       <div className="container">
         {/* SECTION HEADER */}
         <div

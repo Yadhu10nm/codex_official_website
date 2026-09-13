@@ -1,30 +1,30 @@
 {
   "college": {
-    "name": "Institute of Engineering & Technology",
-    "shortName": "IET",
-    "department": "Department of Information Technology & Computer Science",
-    "logo": "/assets/images/college-logo.svg",
-    "website": "https://college.edu"
+    "name": "Surana College Autonomous",
+    "shortName": "Surana College",
+    "department": "Department of Computer Science & Information Technology",
+    "logo": "",
+    "website": "https://suranacollege.edu.in"
   },
   "itClub": {
-    "name": "Information Technology Association",
-    "shortName": "ITA",
-    "logo": "/assets/images/it-club-logo.svg",
-    "tagline": "Empowering Future Technologists"
+    "name": "Esoteric - 25 Years Rajatotsava",
+    "shortName": "Esoteric",
+    "logo": "",
+    "tagline": "In pursuit of excellence"
   },
   "codingClub": {
     "name": "CODEX",
     "fullName": "CODEX Official Coding Club",
     "tagline": "CODE. CREATE. INNOVATE.",
     "subTagline": "The premier student-led developer community & technology innovation lab.",
-    "logo": "/assets/images/codex-logo.svg",
+    "logo": "/assets/images/codex.png",
     "established": "2022",
     "motto": "Transforming passionate thinkers into world-class engineers."
   },
   "contact": {
     "email": "codex.club@college.edu",
     "labLocation": "Advanced Computing Lab, Block 4, Floor 3",
-    "campus": "Main University Campus, Tech Park Drive",
+    "campus": "Surana College Main Campus, Bangalore",
     "meetingSchedule": "Wednesdays & Fridays • 4:30 PM - 6:30 PM"
   }
 }

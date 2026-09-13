@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import LoadingScreen from './components/LoadingScreen';
+import ScrollAnimationManager from './components/ScrollAnimationManager';
+import WaterBackground from './components/WaterBackground';
 
 // Pages
 import Home from './pages/Home';
@@ -18,11 +20,11 @@ import NotFound from './pages/NotFound';
 export default function App() {
   const [initialLoading, setInitialLoading] = useState(true);
 
-  // Minimal initial loading sequence for 3D engine warmup
+  // Initial loading sequence
   useEffect(() => {
     const timer = setTimeout(() => {
       setInitialLoading(false);
-    }, 600);
+    }, 400);
     return () => clearTimeout(timer);
   }, []);
 
@@ -33,7 +35,11 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="app-container" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      {/* Subtle Realistic Three.js White Water Surface Background */}
+      <WaterBackground />
+      {/* Liquid Water Scroll Progress & Universal Reveal Animations */}
+      <ScrollAnimationManager />
+      <div className="app-container" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', position: 'relative', zIndex: 1 }}>
         <Header />
         <div style={{ flexGrow: 1 }}>
           <Suspense fallback={<LoadingScreen message="Loading View..." />}>

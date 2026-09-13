@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, ArrowUpRight, Code2 } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 import navData from '../data/navigation.json';
 import siteConfig from '../data/siteConfig.json';
 
@@ -12,7 +12,7 @@ export default function Header() {
   // Scroll listener for sticky glass header styling
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 15);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
@@ -37,197 +37,147 @@ export default function Header() {
 
   return (
     <header
+      className={`site-header ${scrolled ? 'is-scrolled' : ''}`}
       style={{
         position: 'fixed',
         top: 0,
         left: 0,
         right: 0,
         zIndex: 100,
-        transition: 'all var(--transition-normal)',
+        transition: 'background 280ms ease, border-color 280ms ease, box-shadow 280ms ease, backdrop-filter 280ms ease',
+        background: scrolled
+          ? 'rgba(255, 255, 255, 0.94)'
+          : 'rgba(255, 255, 255, 0.85)',
+        backdropFilter: 'blur(16px)',
+        WebkitBackdropFilter: 'blur(16px)',
+        borderBottom: '1px solid rgba(15, 23, 42, 0.06)',
+        boxShadow: scrolled
+          ? '0 6px 24px -4px rgba(15, 23, 42, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.95)'
+          : 'none',
       }}
     >
-      {/* 1. TOP SECTION BAR: College Logo (Left) & IT Club Logo (Right) */}
       <div
+        className="container-wide"
         style={{
-          background: scrolled
-            ? 'rgba(5, 7, 11, 0.92)'
-            : 'linear-gradient(180deg, rgba(5, 7, 11, 0.85) 0%, rgba(5, 7, 11, 0.4) 100%)',
-          borderBottom: '1px solid var(--glass-border-subtle)',
-          backdropFilter: 'var(--glass-blur-sm)',
-          WebkitBackdropFilter: 'var(--glass-blur-sm)',
-          padding: '6px 0',
-          transition: 'all var(--transition-normal)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          height: '70px',
+          position: 'relative',
         }}
       >
-        <div className="container-wide" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          {/* LEFT: College Brand Crest */}
-          <a
-            href={siteConfig.college.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '10px',
-              textDecoration: 'none',
-            }}
-          >
-            <img
-              src={siteConfig.college.logo}
-              alt={siteConfig.college.name}
-              style={{ height: '26px', width: 'auto' }}
-            />
-          </a>
-
-          {/* RIGHT: IT Club Emblem */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <span
-              style={{
-                fontSize: '0.75rem',
-                color: 'var(--text-muted)',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase',
-                fontWeight: 600,
-                display: 'none',
-              }}
-              className="desktop-only-text"
-            >
-              AFFILIATED WITH
-            </span>
-            <img
-              src={siteConfig.itClub.logo}
-              alt={siteConfig.itClub.name}
-              style={{ height: '26px', width: 'auto' }}
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* 2. MAIN NAVIGATION BAR: Center Coding Club Logo + Nav Items + Join CTA */}
-      <div
-        style={{
-          background: scrolled
-            ? 'rgba(9, 13, 22, 0.88)'
-            : 'rgba(9, 13, 22, 0.65)',
-          backdropFilter: 'var(--glass-blur-md)',
-          WebkitBackdropFilter: 'var(--glass-blur-md)',
-          borderBottom: '1px solid var(--glass-border-medium)',
-          boxShadow: scrolled ? 'var(--shadow-md)' : 'none',
-          padding: '12px 0',
-          transition: 'all var(--transition-normal)',
-        }}
-      >
-        <div
-          className="container-wide"
+        {/* 1. BRAND LOGO (Left - Sleek dark badge for optimal contrast of white logo on white website) */}
+        <Link
+          to="/"
+          className="header-brand"
           style={{
-            display: 'flex',
+            display: 'inline-flex',
             alignItems: 'center',
-            justifyContent: 'space-between',
+            textDecoration: 'none',
+            flexShrink: 0,
           }}
+          title={siteConfig.codingClub.fullName}
         >
-          {/* CENTER / BRAND: Coding Club Logo */}
-          <Link
-            to="/"
+          <div
+            className="header-logo-badge"
             style={{
-              display: 'flex',
+              background: '#0f172a',
+              padding: '5px 14px',
+              borderRadius: 'var(--radius-full)',
+              display: 'inline-flex',
               alignItems: 'center',
-              gap: '12px',
-              textDecoration: 'none',
+              boxShadow: '0 2px 10px rgba(15, 23, 42, 0.12)',
+              border: '1px solid rgba(15, 23, 42, 0.2)',
+              transition: 'transform 0.25s ease, box-shadow 0.25s ease',
             }}
           >
             <img
               src={siteConfig.codingClub.logo}
               alt={siteConfig.codingClub.name}
-              style={{ height: '36px', width: 'auto' }}
+              className="header-logo-codex"
             />
+          </div>
+        </Link>
+
+        {/* 2. CENTER FLOATING NAVIGATION PILL (Desktop) */}
+        <nav
+          className="desktop-nav-pill"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '3px',
+            background: 'rgba(241, 245, 249, 0.85)',
+            padding: '4px 6px',
+            borderRadius: 'var(--radius-full)',
+            border: '1px solid rgba(15, 23, 42, 0.07)',
+            backdropFilter: 'blur(12px)',
+            WebkitBackdropFilter: 'blur(12px)',
+            boxShadow: '0 1px 3px rgba(15, 23, 42, 0.03)',
+          }}
+        >
+          {navData.links.map((link) => {
+            const isHashLink = link.path.startsWith('/#');
+            const isCurrent = isHashLink
+              ? location.hash === link.path.replace('/', '')
+              : location.pathname === link.path;
+
+            return isHashLink ? (
+              <Link
+                key={link.name}
+                to={link.path}
+                onClick={() => handleNavClick(link.path)}
+                className={`nav-pill-item ${isCurrent ? 'active' : ''}`}
+                style={{
+                  padding: '6px 15px',
+                  fontSize: '0.86rem',
+                  fontWeight: 500,
+                  color: isCurrent ? 'var(--accent-blue)' : 'var(--text-secondary)',
+                  background: isCurrent ? '#ffffff' : 'transparent',
+                  borderRadius: 'var(--radius-full)',
+                  boxShadow: isCurrent ? '0 1px 3px rgba(15, 23, 42, 0.06)' : 'none',
+                  transition: 'all var(--transition-fast)',
+                }}
+              >
+                {link.name}
+              </Link>
+            ) : (
+              <NavLink
+                key={link.name}
+                to={link.path}
+                className={({ isActive }) => `nav-pill-item ${isActive ? 'active' : ''}`}
+                style={({ isActive }) => ({
+                  padding: '6px 15px',
+                  fontSize: '0.86rem',
+                  fontWeight: 500,
+                  color: isActive ? 'var(--accent-blue)' : 'var(--text-secondary)',
+                  background: isActive ? '#ffffff' : 'transparent',
+                  borderRadius: 'var(--radius-full)',
+                  boxShadow: isActive ? '0 1px 3px rgba(15, 23, 42, 0.06)' : 'none',
+                  transition: 'all var(--transition-fast)',
+                })}
+              >
+                {link.name}
+              </NavLink>
+            );
+          })}
+        </nav>
+
+        {/* 3. RIGHT ACTIONS (Join Codex CTA + Mobile Toggle) */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <Link
+            to={navData.action.href}
+            className="btn btn-primary btn-sm header-action-btn"
+            style={{
+              borderRadius: 'var(--radius-full)',
+              padding: '8px 18px',
+              fontSize: '0.84rem',
+            }}
+          >
+            <span>{navData.action.label}</span>
+            <ArrowUpRight size={15} />
           </Link>
 
-          {/* DESKTOP NAV LINKS */}
-          <nav
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px',
-              background: 'rgba(15, 23, 42, 0.5)',
-              padding: '6px 14px',
-              borderRadius: 'var(--radius-full)',
-              border: '1px solid var(--glass-border-subtle)',
-              backdropFilter: 'var(--glass-blur-sm)',
-            }}
-            className="desktop-nav"
-          >
-            {navData.links.map((link) => {
-              const isHashLink = link.path.startsWith('/#');
-              const isCurrent = isHashLink
-                ? location.hash === link.path.replace('/', '')
-                : location.pathname === link.path;
-
-              return isHashLink ? (
-                <Link
-                  key={link.name}
-                  to={link.path}
-                  onClick={() => handleNavClick(link.path)}
-                  style={{
-                    padding: '6px 14px',
-                    fontSize: '0.88rem',
-                    fontWeight: 500,
-                    color: isCurrent ? 'var(--text-primary)' : 'var(--text-secondary)',
-                    background: isCurrent ? 'rgba(255, 255, 255, 0.08)' : 'transparent',
-                    borderRadius: 'var(--radius-full)',
-                    transition: 'all var(--transition-fast)',
-                  }}
-                  onMouseEnter={(e) => {
-                    if (!isCurrent) {
-                      e.currentTarget.style.color = 'var(--text-primary)';
-                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.04)';
-                    }
-                  }}
-                  onMouseLeave={(e) => {
-                    if (!isCurrent) {
-                      e.currentTarget.style.color = 'var(--text-secondary)';
-                      e.currentTarget.style.background = 'transparent';
-                    }
-                  }}
-                >
-                  {link.name}
-                </Link>
-              ) : (
-                <NavLink
-                  key={link.name}
-                  to={link.path}
-                  style={({ isActive }) => ({
-                    padding: '6px 14px',
-                    fontSize: '0.88rem',
-                    fontWeight: 500,
-                    color: isActive ? 'var(--text-primary)' : 'var(--text-secondary)',
-                    background: isActive ? 'rgba(255, 255, 255, 0.08)' : 'transparent',
-                    borderRadius: 'var(--radius-full)',
-                    transition: 'all var(--transition-fast)',
-                  })}
-                >
-                  {link.name}
-                </NavLink>
-              );
-            })}
-          </nav>
-
-          {/* RIGHT ACTION: Join / Contact CTA */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }} className="desktop-nav">
-            <Link
-              to={navData.action.href}
-              className="btn btn-primary btn-sm"
-              style={{
-                borderRadius: 'var(--radius-full)',
-                padding: '8px 18px',
-                fontSize: '0.85rem',
-              }}
-            >
-              <span>{navData.action.label}</span>
-              <ArrowUpRight size={15} />
-            </Link>
-          </div>
-
-          {/* MOBILE HAMBURGER BUTTON */}
+          {/* Mobile Menu Toggle Button */}
           <button
             type="button"
             aria-label="Toggle navigation menu"
@@ -237,9 +187,11 @@ export default function Header() {
               display: 'none',
               padding: '8px',
               borderRadius: 'var(--radius-md)',
-              background: 'var(--glass-bg-subtle)',
-              border: '1px solid var(--glass-border-medium)',
+              background: 'rgba(241, 245, 249, 0.9)',
+              border: '1px solid rgba(15, 23, 42, 0.1)',
               color: 'var(--text-primary)',
+              cursor: 'pointer',
+              transition: 'background var(--transition-fast)',
             }}
           >
             {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -247,7 +199,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* 3. ANIMATED MOBILE DRAWER MENU */}
+      {/* MOBILE DRAWER ACCORDION */}
       {mobileMenuOpen && (
         <div
           className="mobile-drawer animate-fade-in"
@@ -256,45 +208,42 @@ export default function Header() {
             top: '100%',
             left: 0,
             right: 0,
-            background: 'var(--glass-bg-dropdown)',
-            backdropFilter: 'var(--glass-blur-lg)',
-            WebkitBackdropFilter: 'var(--glass-blur-lg)',
-            borderBottom: '1px solid var(--glass-border-medium)',
-            padding: '24px',
-            boxShadow: 'var(--shadow-lg)',
+            background: 'rgba(255, 255, 255, 0.98)',
+            backdropFilter: 'blur(20px)',
+            WebkitBackdropFilter: 'blur(20px)',
+            borderBottom: '1px solid rgba(15, 23, 42, 0.08)',
+            padding: '20px 24px 24px',
+            boxShadow: '0 16px 36px rgba(15, 23, 42, 0.08)',
             display: 'flex',
             flexDirection: 'column',
-            gap: '12px',
+            gap: '10px',
           }}
         >
-          {navData.links.map((link) => {
-            const isHashLink = link.path.startsWith('/#');
-            return (
-              <Link
-                key={link.name}
-                to={link.path}
-                onClick={() => {
-                  handleNavClick(link.path);
-                  setMobileMenuOpen(false);
-                }}
-                style={{
-                  padding: '12px 16px',
-                  borderRadius: 'var(--radius-md)',
-                  background: 'var(--glass-bg-subtle)',
-                  border: '1px solid var(--glass-border-subtle)',
-                  color: 'var(--text-primary)',
-                  fontSize: '1rem',
-                  fontWeight: 600,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                }}
-              >
-                <span>{link.name}</span>
-                <ArrowUpRight size={16} color="var(--accent-blue)" />
-              </Link>
-            );
-          })}
+          {navData.links.map((link) => (
+            <Link
+              key={link.name}
+              to={link.path}
+              onClick={() => {
+                handleNavClick(link.path);
+                setMobileMenuOpen(false);
+              }}
+              style={{
+                padding: '12px 16px',
+                borderRadius: 'var(--radius-md)',
+                background: 'rgba(241, 245, 249, 0.6)',
+                border: '1px solid rgba(15, 23, 42, 0.06)',
+                color: 'var(--text-primary)',
+                fontSize: '0.95rem',
+                fontWeight: 600,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}
+            >
+              <span>{link.name}</span>
+              <ArrowUpRight size={16} color="var(--accent-blue)" />
+            </Link>
+          ))}
           <Link
             to={navData.action.href}
             className="btn btn-primary"
@@ -302,19 +251,55 @@ export default function Header() {
             onClick={() => setMobileMenuOpen(false)}
           >
             <span>{navData.action.label}</span>
-            <ArrowUpRight size={18} />
+            <ArrowUpRight size={17} />
           </Link>
         </div>
       )}
 
-      {/* Inline styles for responsive menu toggle */}
       <style>{`
-        @media (max-width: 900px) {
-          .desktop-nav {
+        /* Sleek CODEX Logo */
+        .header-logo-codex {
+          height: 32px;
+          width: auto;
+          object-fit: contain;
+          transition: transform 0.25s ease;
+        }
+
+        .header-brand:hover .header-logo-badge {
+          transform: translateY(-1px);
+          box-shadow: 0 4px 16px rgba(15, 23, 42, 0.2);
+        }
+
+        .nav-pill-item:hover {
+          color: var(--accent-blue) !important;
+          background: rgba(255, 255, 255, 0.6) !important;
+        }
+
+        .nav-pill-item.active {
+          color: var(--accent-blue) !important;
+          background: #ffffff !important;
+          box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 991px) {
+          .desktop-nav-pill {
             display: none !important;
           }
           .mobile-menu-toggle {
             display: flex !important;
+          }
+          .header-action-btn {
+            display: none !important;
+          }
+          .header-logo-codex {
+            height: 28px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .header-logo-codex {
+            height: 26px;
           }
         }
       `}</style>

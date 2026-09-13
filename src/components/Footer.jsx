@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, MapPin, Mail, Clock, Terminal } from 'lucide-react';
+import { MapPin, Mail, Clock, Terminal } from 'lucide-react';
 import siteConfig from '../data/siteConfig.json';
 import navData from '../data/navigation.json';
 import socialsData from '../data/socials.json';
@@ -12,8 +12,10 @@ export default function Footer() {
   return (
     <footer
       style={{
-        background: 'linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%)',
-        borderTop: '1px solid var(--glass-border-medium)',
+        background: 'rgba(255, 255, 255, 0.92)',
+        backdropFilter: 'blur(20px)',
+        WebkitBackdropFilter: 'blur(20px)',
+        borderTop: '1px solid rgba(15, 23, 42, 0.08)',
         paddingTop: '80px',
         paddingBottom: '40px',
         position: 'relative',
@@ -32,11 +34,23 @@ export default function Footer() {
           {/* COLUMN 1: Club Brand & Mission */}
           <div style={{ maxWidth: '340px' }}>
             <Link to="/" style={{ display: 'inline-block', marginBottom: '20px' }}>
-              <img
-                src={siteConfig.codingClub.logo}
-                alt={siteConfig.codingClub.name}
-                style={{ height: '40px', width: 'auto' }}
-              />
+              <div
+                style={{
+                  background: '#0f172a',
+                  padding: '5px 14px',
+                  borderRadius: 'var(--radius-full)',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  boxShadow: '0 2px 8px rgba(15, 23, 42, 0.12)',
+                  border: '1px solid rgba(15, 23, 42, 0.2)',
+                }}
+              >
+                <img
+                  src={siteConfig.codingClub.logo}
+                  alt={siteConfig.codingClub.name}
+                  style={{ height: '30px', width: 'auto' }}
+                />
+              </div>
             </Link>
             <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginBottom: '24px' }}>
               {siteConfig.codingClub.subTagline}
@@ -68,8 +82,9 @@ export default function Footer() {
                       display: 'inline-flex',
                       alignItems: 'center',
                       gap: '4px',
+                      transition: 'color var(--transition-fast)',
                     }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--text-primary)')}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent-blue)')}
                     onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-secondary)')}
                   >
                     <span>{link.name}</span>
@@ -134,12 +149,14 @@ export default function Footer() {
               className="glass-panel"
               style={{
                 padding: '16px',
-                background: 'rgba(15, 23, 42, 0.4)',
+                background: '#ffffff',
+                border: '1px solid rgba(15, 23, 42, 0.08)',
+                boxShadow: '0 2px 8px rgba(15, 23, 42, 0.03)',
                 borderRadius: 'var(--radius-md)',
               }}
             >
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '8px' }}>
-                <Clock size={16} color="var(--accent-indigo)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <Clock size={16} color="var(--accent-blue)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <span style={{ fontSize: '0.85rem', color: 'var(--text-primary)', fontWeight: 600 }}>
                   {siteConfig.contact.meetingSchedule}
                 </span>

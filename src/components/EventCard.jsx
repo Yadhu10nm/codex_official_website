@@ -40,12 +40,12 @@ export default function EventCard({ event }) {
             padding: '4px 10px',
             borderRadius: 'var(--radius-full)',
             background: isUpcoming
-              ? 'rgba(16, 185, 129, 0.2)'
-              : 'rgba(15, 23, 42, 0.7)',
+              ? 'rgba(16, 185, 129, 0.1)'
+              : 'rgba(241, 245, 249, 0.9)',
             border: isUpcoming
-              ? '1px solid rgba(16, 185, 129, 0.4)'
-              : '1px solid var(--glass-border-subtle)',
-            color: isUpcoming ? '#34d399' : 'var(--text-secondary)',
+              ? '1px solid rgba(16, 185, 129, 0.3)'
+              : '1px solid rgba(15, 23, 42, 0.1)',
+            color: isUpcoming ? '#059669' : 'var(--text-secondary)',
             fontSize: '0.75rem',
             fontWeight: 600,
             backdropFilter: 'var(--glass-blur-sm)',
