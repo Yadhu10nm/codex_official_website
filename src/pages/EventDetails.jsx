@@ -169,8 +169,8 @@ export default function EventDetails() {
                       style={{
                         padding: '12px 16px',
                         borderRadius: 'var(--radius-md)',
-                        background: 'rgba(15, 23, 42, 0.4)',
-                        border: '1px solid var(--glass-border-subtle)',
+                        background: 'rgba(241, 245, 249, 0.7)',
+                        border: '1px solid rgba(15, 23, 42, 0.07)',
                         fontSize: '0.9rem',
                         color: 'var(--text-primary)',
                         display: 'flex',
@@ -285,8 +285,8 @@ export default function EventDetails() {
                         gap: '14px',
                         padding: '12px',
                         borderRadius: 'var(--radius-md)',
-                        background: 'rgba(15, 23, 42, 0.4)',
-                        border: '1px solid var(--glass-border-subtle)',
+                        background: 'rgba(241, 245, 249, 0.7)',
+                        border: '1px solid rgba(15, 23, 42, 0.07)',
                       }}
                     >
                       <img

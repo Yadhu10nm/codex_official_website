@@ -35,7 +35,7 @@ export default function LoadingScreen({ message = 'Loading experience...' }) {
               position: 'absolute',
               inset: 0,
               borderRadius: '50%',
-              border: '2px solid rgba(56, 189, 248, 0.2)',
+              border: '2px solid rgba(2, 132, 199, 0.15)',
             }}
           />
           <div
@@ -44,7 +44,7 @@ export default function LoadingScreen({ message = 'Loading experience...' }) {
               inset: 0,
               borderRadius: '50%',
               border: '2px solid transparent',
-              borderTopColor: '#38bdf8',
+              borderTopColor: 'var(--accent-blue)',
               animation: 'spinSlow 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite',
             }}
           />
@@ -53,7 +53,7 @@ export default function LoadingScreen({ message = 'Loading experience...' }) {
               position: 'absolute',
               inset: '16px',
               borderRadius: '50%',
-              background: 'rgba(56, 189, 248, 0.1)',
+              background: 'rgba(2, 132, 199, 0.08)',
               animation: 'pulseSubtle 2s ease-in-out infinite',
             }}
           />
